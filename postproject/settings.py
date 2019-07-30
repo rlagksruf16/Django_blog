@@ -25,7 +25,7 @@ SECRET_KEY = '=&x=j*-vtq*boy)*s9&8e$%$b%uri*i8lv8f86klca4ih0n^$u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -145,5 +145,3 @@ DATABASES['default'].update(db_from_env)
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-ALLOWED_HOSTS = ['*']
